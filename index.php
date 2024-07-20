@@ -9,22 +9,15 @@
     <title>The ArtBox</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="img/logo.png" alt="Logo Artbox" id="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php require_once(__DIR__ . 'includes/header.php'); ?>
     <main>
         <div id="liste-oeuvres">
-            <article class="oeuvre">
+            <article  class="oeuvre">
                 <a href="oeuvre-1.html">
                     <img src="img/clark-van-der-beken.png" alt="Dodomu">
                     <h2>Dodomu</h2>
-                    <p class="description">Mia Tozerski</p>
-                </a>
+                    
+                    <p class="description">Mia Tozerski</p> 
             </article>
             <article class="oeuvre">
                 <a href="oeuvre-2.html">

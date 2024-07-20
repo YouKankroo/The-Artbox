@@ -9,14 +9,9 @@
     <title>The ArtBox</title>
 </head>
 <body>
-<header>
-    <a href="index.html"><img src="img/logo.png" alt="Logo Artbox" id="logo"></a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-        </ul>
-    </nav>
-</header>
+    
+<?php require_once(__DIR__ . '/header.php'); ?>
+
 <main>
     <article id="detail-oeuvre">
         <div id="img-oeuvre">
