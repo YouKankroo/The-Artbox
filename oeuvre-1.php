@@ -10,7 +10,7 @@
 </head>
 <body>
     
-<?php require_once(__DIR__ . '/header.php'); ?>
+<?php include 'The-Artboxheader.php'; ?>
 
 <main>
     <article id="detail-oeuvre">
