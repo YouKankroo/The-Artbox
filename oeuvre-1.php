@@ -26,10 +26,6 @@
         </div>
     </article>
 </main>
-<footer>
-    <p>
-        <strong>© THE ARTBOX</strong> - <em>Tous droits réservés</em>
-    </p>
-</footer>
+<?php include 'The-Artboxfooter.php'; ?>
 </body>
 </html>
