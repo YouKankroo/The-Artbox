@@ -22,12 +22,15 @@ $oeuvres = array(
 foreach ($oeuvres as $oeuvre) {
     $titre = $oeuvre['titre'];
     $auteur = $oeuvre['auteur'];
-
+    
     echo "
+   
     <div class='oeuvre'>
         <h2>$titre</h2>
-         <p><strong>Auteur :</strong> $auteur</p>
+        <p><strong>Auteur :</strong> $auteur</p>
     </div>
+  
     ";
 }
 ?>
+

@@ -9,7 +9,7 @@
     <title>The ArtBox</title>
 </head>
 <body>
-<?php require_once  'The-Artboxheader.php'; ?>
+<?php include  'The-Artboxheader.php'; ?>
     <main>
         <div id="liste-oeuvres">
             <article  class="oeuvre">
@@ -119,6 +119,6 @@
             </article>
         </div>
     </main>
-    <?php require_once  'The-Artboxfooter.php'; ?>
+    <?php include  'The-Artboxfooter.php'; ?>
 </body>
 </html>
