@@ -15,23 +15,53 @@
 
 
    
-<?php foreach ($oeuvres as $oeuvre) 
+        <?php
+// Définir les données des œuvres dans un tableau associatif
+$oeuvres_data = [
+    ['image' => 'img/clark-van-der-beken.png', 'titre' => 'DODOMU', 'auteur' => 'Mia Tozerski', 'link' => 'oeuvre-1.php'],
+    ['image' => 'img/dan-cristian-padure.png', 'titre' => 'AASHAAHEEN BAADAL', 'auteur' => 'Anaisha Devi', 'link' => 'oeuvre-2.php'],
+    ['image' => 'img/fly-d.png', 'titre' => 'NIGHTLIFE TRAFFIC', 'auteur' => 'Andrew Forsythe', 'link' => 'oeuvre-3.php'],
+    ['image' => 'img/jazmin-quaynor.png', 'titre' => 'LE REFUGE DE L HAVRE', 'auteur' => 'Simon Pelletier', 'link' => 'oeuvre-4.php'],
+    ['image' => 'img/orfeas-green.png', 'titre' => 'RED WASHOVER', 'auteur' => 'Kit Van Der Borght', 'link' => 'oeuvre-5.php'],
+    ['image' => 'img/pawel-czerwinski-2.png', 'titre' => 'CHROMATICS', 'auteur' => 'Jean-Michel Delatronchette', 'link' => 'oeuvre-6.php'],
+    ['image' => 'img/pawel-czerwinski-3.png', 'titre' => 'DIGITAL NEGATIVE', 'auteur' => 'Hamish McKee', 'link' => 'oeuvre-7.php'],
+    ['image' => 'img/pawel-czerwinski.png', 'titre' => 'BLAST FROM THE PAST', 'auteur' => 'Juliette Baskerville', 'link' => 'oeuvre-8.php'],
+    ['image' => 'img/steve-johnson-2.png', 'titre' => 'HURRICANE', 'auteur' => 'Natalie Wellington', 'link' => 'oeuvre-9.php'],
+    ['image' => 'img/steve-johnson-3.png', 'titre' => 'LA MARÉE ROUGE', 'auteur' => 'Martin Rodriguez', 'link' => 'oeuvre-10.php'],
+    ['image' => 'img/steve-johnson-4.png', 'titre' => 'ASIMILACION', 'auteur' => 'Angel Sanchez-Fernandez', 'link' => 'oeuvre-11.php'],
+    ['image' => 'img/steve-johnson-5.png', 'titre' => 'LA GALAXIA GIALLA', 'auteur' => 'Eduardo Tancredi', 'link' => 'oeuvre-12.php'],
+    ['image' => 'img/steve-johnson-6.png', 'titre' => 'PUFFY AMALGAMATE', 'auteur' => 'Sandro De Blasi', 'link' => 'oeuvre-13.php'],
+    ['image' => 'img/steve-johnson.png', 'titre' => 'MIRAGE', 'auteur' => 'Stéphanie Kaiser', 'link' => 'oeuvre-14.php'],
+    ['image' => 'img/victor-grabarczyk.png', 'titre' => 'BLAUE GELBE MUSTER', 'auteur' => 'Adelheid Von Schreiber', 'link' => 'oeuvre-15.php'],
+];
+
+// Initialiser le tableau des œuvres
+$oeuvres = [];
+
+// Remplir le tableau des œuvres
+foreach ($oeuvres_data as $index => $data) {
+    $oeuvres[$index + 1] = $data;
+}
+
+// Utiliser les données dans une boucle foreach
+foreach ($oeuvres as $oeuvre) {
     $titre = $oeuvre['titre'];
     $auteur = $oeuvre['auteur'];
-    $image = $oeuvre ['image'];
-    $link = $oeuvre 
-    echo "<article class = 'oeuvre' >"; 
-    echo "<a href = '"
-     
-   <article class="oeuvre">
-                <a href="oeuvre-2.html">
-                    <img src="img/pawel-czerwinski-3.png" alt="Aashaaheen Baadal">
-                    <h2>Aashaaheen Baadal</h2>
-                    <p class="description">Anaisha Devi</p>
-                </a>
-            </article>
+    $image = $oeuvre['image'];
+    $link = $oeuvre['link'];
 
-        </div>
+    // Afficher ou utiliser les données de l'œuvre
+    echo "<a href='$link' class='oeuvre'>";
+    echo "<img src='$image' alt='$titre'>";
+    echo "<h2>$titre</h2>";
+    echo "<p>$auteur</p>";
+    echo "</a>";
+}
+?>
+     
+  
+
+   </div>
     </main>
     <?php include  'The-Artboxfooter.php'; ?>
 </body>
