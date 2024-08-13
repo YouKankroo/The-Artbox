@@ -18,14 +18,11 @@
         <?php
 // Définir les données des œuvres dans un tableau associatif
 include 'oeuvres.php';
-
 // Remplir le tableau des œuvres
-foreach ($oeuvres_data as $oeuvre => $data) {
-    $oeuvres[$oeuvre + 1] = $data;
-}
+
 
 // Utiliser les données dans une boucle foreach
-foreach ($oeuvres as $oeuvre) {
+foreach ($oeuvres_data as $id=> $oeuvre) {
     $titre = $oeuvre['titre'];
     $auteur = $oeuvre['auteur'];
     $image = $oeuvre['image'];
