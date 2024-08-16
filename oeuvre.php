@@ -15,32 +15,35 @@ if (isset($oeuvres_data[$id])) {
 
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>The ArtBox</title>
 </head>
-<body>
-    
-<?php include 'The-Artboxheader.php'; ?>
 
-<main>
-    <article id="detail-oeuvre">
-        <div id="img-oeuvre">
-            <img src="<?php echo htmlspecialchars($oeuvre['image']); ?>" alt="<?php echo htmlspecialchars($oeuvre['titre']); ?>">
-        </div>
-        <div id="contenu-oeuvre">
-            <h1><?php echo htmlspecialchars($oeuvre['titre']); ?></h1>
-            <p class="description"><?php echo htmlspecialchars($oeuvre['auteur']); ?></p>
-            <p class="description-complete">
-                <?php echo htmlspecialchars($oeuvre['description']); ?>
-            </p>
-        </div>
-    </article>
-</main>
-<?php include 'The-Artboxfooter.php'; ?>
+<body>
+
+    <?php include 'The-Artboxheader.php'; ?>
+
+    <main>
+        <article id="detail-oeuvre">
+            <div id="img-oeuvre">
+                <img src="<?php echo htmlspecialchars($oeuvre['image']); ?>" alt="<?php echo htmlspecialchars($oeuvre['titre']); ?>">
+            </div>
+            <div id="contenu-oeuvre">
+                <h1><?php echo htmlspecialchars($oeuvre['titre']); ?></h1>
+                <p class="description"><?php echo htmlspecialchars($oeuvre['auteur']); ?></p>
+                <p class="description-complete">
+                    <?php echo htmlspecialchars($oeuvre['description']); ?>
+                </p>
+            </div>
+        </article>
+    </main>
+    <?php include 'The-Artboxfooter.php'; ?>
 </body>
+
 </html>
