@@ -2,7 +2,9 @@
 include 'oeuvres.php'; // Inclure le fichier contenant les données avant de les utiliser
 
 // Récupération de l'identifiant d'œuvre depuis l'URL
-$id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+if (isset($_GET['id'])) {
+    $id = (int)$_GET['id'];
+}
 
 if (isset($oeuvres_data[$id])) {
     $oeuvre = $oeuvres_data[$id];
