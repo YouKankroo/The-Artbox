@@ -46,6 +46,3 @@ if (isset($oeuvres_data[$id])) {
         </article>
     </main>
     <?php include 'The-Artboxfooter.php'; ?>
-</body>
-
-</html>

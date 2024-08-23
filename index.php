@@ -23,7 +23,7 @@
             // Remplir le tableau des œuvres
 
 
-        // Utiliser les données dans une boucle foreach
+            // Utiliser les données dans une boucle foreach
             foreach ($oeuvres_data as $id => $oeuvre) {
                 $titre = $oeuvre['titre'];
                 $auteur = $oeuvre['auteur'];
