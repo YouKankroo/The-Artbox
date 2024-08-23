@@ -27,22 +27,22 @@ if (isset($oeuvres_data[$id])) {
     <title>The ArtBox</title>
 </head>
 
-<body>
 
-    <?php include 'The-Artboxheader.php'; ?>
 
-    <main>
-        <article id="detail-oeuvre">
-            <div id="img-oeuvre">
-                <img src="<?php echo htmlspecialchars($oeuvre['image']); ?>" alt="<?php echo htmlspecialchars($oeuvre['titre']); ?>">
-            </div>
-            <div id="contenu-oeuvre">
-                <h1><?php echo htmlspecialchars($oeuvre['titre']); ?></h1>
-                <p class="description"><?php echo htmlspecialchars($oeuvre['auteur']); ?></p>
-                <p class="description-complete">
-                    <?php echo htmlspecialchars($oeuvre['description']); ?>
-                </p>
-            </div>
-        </article>
-    </main>
-    <?php include 'The-Artboxfooter.php'; ?>
+<?php include 'The-Artboxheader.php'; ?>
+
+<main>
+    <article id="detail-oeuvre">
+        <div id="img-oeuvre">
+            <img src="<?php echo htmlspecialchars($oeuvre['image']); ?>" alt="<?php echo htmlspecialchars($oeuvre['titre']); ?>">
+        </div>
+        <div id="contenu-oeuvre">
+            <h1><?php echo htmlspecialchars($oeuvre['titre']); ?></h1>
+            <p class="description"><?php echo htmlspecialchars($oeuvre['auteur']); ?></p>
+            <p class="description-complete">
+                <?php echo htmlspecialchars($oeuvre['description']); ?>
+            </p>
+        </div>
+    </article>
+</main>
+<?php include 'The-Artboxfooter.php'; ?>
